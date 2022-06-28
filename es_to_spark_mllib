@@ -13,7 +13,7 @@ val linear_regression_text_data = sqlContext.read.text("/home/abdul/Desktop/samp
 linear_regression_text_data.saveToEs("sample_lin_reg")
 
 //loading from es
-val train2 = sqlContext.read.format("es").load("sample_lin_reg")
+val training = sqlContext.read.format("es").load("sample_lin_reg")
 
 
 //model
